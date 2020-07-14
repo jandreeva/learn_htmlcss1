@@ -2,111 +2,113 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic,latin" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Седона: городок в Аризоне</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <a><img src="img/logo-sedona.svg" width="138" height="71" alt="логотип Седоны"></a>
-        <ul>
-          <li><a>Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+  <body class="page container">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a><img src="img/logo-sedona.svg" width="138" height="71" alt="логотип Седоны" class="logo-sedona"></a>
+        <ul class="main-nav-list">
+          <li class="main-nav-item"><a>Информация</a></li>
+          <li class="main-nav-item"><a href="media.html">Фото и видео</a></li>
+          <li class="main-nav-item"><a href="map.html">Карта штата</a></li>
+          <li class="main-nav-item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>О туризме в Седоне</h1>
+    <main class="main-wrap">
+      <h1 class="visually-hidden">О туризме в Седоне</h1>
       <section class="welcome-section">
+        <div class="welcome-section-wrap">
         <img src="img/intro-welcome.svg" width="457" height="350" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks">
-        <!--Фон будет в стилях -->
+        </div>
       </section>
-      <section>
+      <section class="profits">
+        <div class="profits-header">
         <h2 class="visually-hidden">Причины, по которым Седона круче Большого каньона</h2>
-        <p>Седона — небольшой городок в Аризоне,<br>заслуживающий большего! </p>
+        <p class="profit-tagline">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ol>
-          <li class="main-profit-big">
-            <h3>Настоящий <br>городок  </h3>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <p>— №1 —</p>
-            <img src="img/sedona-house.jpg" width="800" height="400" alt="фотография Седоны">
+        </div>
+        <ol class="profit-list">
+          <li class="main-profit-big profit-list-item">
+            <div class="big-profit-content">
+              <h3>Настоящий<br>городок</h3>
+              <p class="profit-number">— №1 —</p>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img src="img/sedona-house.jpg" width="800" height="255" alt="фотография Седоны" class="main-profit-big-pic">
           </li>
-          <li class="main-profit-grey">
+          <li class="profit-house profit-list-item profit-grey">
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="main-profit-grey">
-            <h3>Еда  </h3>
+          <li class="profit-food profit-list-item profit-grey">
+            <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li class="main-profit-grey">
-          <li>
-            <h3>Сувениры  </h3>
+          </li>
+          <li class="profit-staff profit-list-item profit-grey">
+            <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
-          <li class="main-profit-big">
-            <h3>Там есть <br>Мост дьявола  </h3>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <p>— №2 —</p>
-            <img src="img/devil-bridge.jpg" width="800" height="400" alt="мост дьявола">
+          <li class="main-profit-big profit-list-item">
+            <img src="img/devil-bridge.jpg" width="800" height="255" alt="мост дьявола" class="main-profit-big-pic">
+            <div class="big-profit-content">
+              <h3>Там есть<br>Мост дьявола</h3>
+              <p class="profit-number">— №2 —</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </li>
-          <li class="main-profit-small">
-            <h3>Небольшая <br>площадь  </h3>
-            <p>— №3 —</p>
-            <p>Все достопримечательности  находятся очень близко</p>
+          <li class="profit-list-item">
+            <h3>Небольшая<br>площадь</h3>
+            <p class="profit-number">— №3 —</p>
+            <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="main-profit-small">
-            <h3>Красивая <br>дорога  </h3>
-            <p>— №4 —</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем  не скучно!</p>
+          <li class="profit-list-item">
+            <h3>Красивая<br>дорога</h3>
+            <p class="profit-number">— №4 —</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="main-profit-small">
-            <h3>Мало <br>туристов </h3>
-            <p>— №5 —</p>
-            <p>Большинство едет в гранд каньон  и толпится там</p>
+          <li class="profit-list-item">
+            <h3>Мало<br>туристов</h3>
+            <p class="profit-number">— №5 —</p>
+            <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
       </section>
-      <section>
-        <h2 class="visually-hidden">Заявка на подбор гостиницы</h2>
-        <p>Заинтересовались?  </p>
-        <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-        <form method="get" action="hotels.html">
-          <fieldset>
-            <legend>Поиск гостиницы в Седоне</legend>
-            <label>
-              Дата заезда:
-              <input type="date" name="arrive-date" value="24-04-2017">
-            </label>
-             <label>
-              Дата выезда:
-              <input type="date" name="leave-date" value="04-06-2017">
-            </label>
-              <label>
-              Взрослые
-              <input type="number" step="1" name="adults" placeholder="2">
-            </label>
-              <label>
-              Дата заезда:
-              <input type="number" step="1" name="child" placeholder="0">
-            </label>
-          </fieldset>
-          <button type="submit" name="submit" alt="найти жильё по заданным параметрам">Найти</button><!-- Это вообще должно быть ссылкой, открывающейся в новом окне, на странице hotels.html-->
+      <section class="form-section">
+        <div class="form-section-heading">
+          <h2 class="visually-hidden">Заявка на подбор гостиницы</h2>
+          <p class="interested">Заинтересовались?</p>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
+        <h3 class="main-form-legend">Поиск гостиницы в Седоне</h3>
+        <div class="form-wrapper">
+        <form method="get" action="hotels.html" class="main-form">
+            <label for="arrive-date">Дата заезда:</label>
+            <input type="date" name="arrive-date" id="arrive-date" value="24-04-2017" class="date-input">
+            <label for="leave-date" >Дата выезда:</label>
+            <input type="date" name="leave-date" id="leave-date" value="04-06-2017" class="date-input">
+            <label for="adults">Взрослые:</label>
+            <input type="number" step="1" name="adults" id="adults" placeholder="2" class="number-input">
+            <label for="child">Дети:</label>
+            <input type="number" step="1" name="child" id="child" placeholder="0" class="number-input">
+          <button type="submit" name="submit" alt="найти жильё по заданным параметрам" class="submit-button">Найти</button><!-- Это вообще должно быть ссылкой, открывающейся в новом окне, на странице hotels.html-->
         </form>
-        <!--Карта должна быть фоном или js -->
+        </div>
       </section>
     </main>
-    <footer>
-      <p>#visitsedona<br>
+    <footer class="main-footer">
+      <p class="footer-tag">#visitsedona<br>
       Тел: <a href="tel:+74956660166" alt="Телефон">+7(495) 666-01-66</a></p>
-      <ul>
-        <li><a href="#" alt="twitter">twitter</a></li>
-        <li><a href="#" alt="facebook">facebook</a></li>
-        <li><a href="#" alt="youtube">youtube</a></li>
+      <ul class="social-list">
+        <li class="social-list-item"><a href="#" alt="twitter" class="twitter"></a></li>
+        <li class="social-list-item"><a href="#" alt="facebook" class="facebook"></a></li>
+        <li class="social-list-item"><a href="#" alt="youtube" class="youtube"></a></li>
       </ul>
-      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="nofollow" alt="интенсив по html и css"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип html academy"></a></p>
+      <p class="madeby">Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="nofollow" alt="интенсив по html и css"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип html academy"></a></p>
     </footer>
   </body>
 </html>
